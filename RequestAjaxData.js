@@ -23,9 +23,9 @@ class RequestAjaxData {
         this.data = data;
     }
 
-    callback = (data) => {
-        if( data.success && this.callbackActionSuccess || !data.success && this.callbackActionError ){
-            if(data.success) {
+    callback = (data, success) => {
+        if( success && this.callbackActionSuccess || !success && this.callbackActionError ){
+            if(success) {
                 this.callbackActionSuccess(data);
             }
             else{
