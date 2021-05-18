@@ -1,6 +1,6 @@
 # requestAjax
 
-### Inicialização:
+### Inicialização única:
 `
 const requestAjax = new RequestAjax('{{ csrf_token() }}');
 `
