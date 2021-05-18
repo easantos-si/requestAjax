@@ -14,10 +14,10 @@ class RequestAjax{
 
     request(requestAjaxData){
 
-        const responseCallback = (data, sucess) => {
+        const responseCallback = (data, success) => {
             requestAjaxData.callback({
                 data: data,
-                success: sucess
+                success: success
             });
         };
 
